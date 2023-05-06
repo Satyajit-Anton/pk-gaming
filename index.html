@@ -160,6 +160,17 @@ cursor: pointer;
             AutoPlay=false;
             }
         }
+        document.addEventListener('keydown',(event)=>{
+                if (event.key==='r'){
+                    resultby('ROCK')
+                }
+                else if(event.key==='p'){
+                    resultby('PAPER')
+                }
+                else if(event.key==='s'){
+                    resultby('SCISSOR')
+                }
+            });  
         
             
 </script>
