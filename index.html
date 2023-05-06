@@ -161,13 +161,13 @@ cursor: pointer;
             }
         }
         document.addEventListener('keydown',(event)=>{
-                if (event.key==='r'){
+                if (event.key.toLowercase()==='r'){
                     resultby('ROCK')
                 }
-                else if(event.key==='p'){
+                else if(event.key.toLowercase()==='p'){
                     resultby('PAPER')
                 }
-                else if(event.key==='s'){
+                else if(event.key.toLowercase()==='s'){
                     resultby('SCISSOR')
                 }
             });  
